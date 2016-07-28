@@ -15,15 +15,13 @@ namespace CartolaMais.Services
 		{
 			using (var httpClient = new HttpClient() { MaxResponseContentBufferSize = int.MaxValue })
 			{
+                string json = "{\"payload\":{\"email\":\"" + email + "\",\"password\":\"" + senha + "\",\"serviceId\":438}}";
+
 				var request = new HttpRequestMessage()
 				{
 					RequestUri = new Uri("https://login.globo.com/api/authentication"),
 					Method = HttpMethod.Post,
-					Content = new StringContent("{\"payload\": {" +
-												"\"email\": " + email + "," +
-												"\"password\": " + senha + "," +
-												"\"serviceId\": 438 }" +
-												"}",
+					Content = new StringContent(json,
 									Encoding.UTF8,
 									"application/json")
 				};
