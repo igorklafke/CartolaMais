@@ -23,6 +23,8 @@ namespace CartolaMais.Views
 			string result = await cartolaService.Autenticar(email.Text, senha.Text);
 
 			await DisplayAlert("Auth", result, "ok");
+            var pagina = new Views.MenuPage();
+            Navigation.PushAsync(pagina);
         }
     }
 }

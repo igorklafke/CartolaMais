@@ -108,8 +108,11 @@
     <None Include="Windows_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\cartolafcmais.png" />
-    <Content Include="Assets\cartolafcmaislargo.png" />
+    <Content Include="cartolafcmais.png" />
+    <Content Include="cartolafcmaislargo.png" />
+    <Content Include="config.png" />
+    <Content Include="hamburger.png" />
+    <Content Include="league.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -118,6 +121,8 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="squad.png" />
+    <Content Include="trophy.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
