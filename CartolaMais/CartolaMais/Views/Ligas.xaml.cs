@@ -8,17 +8,11 @@ using Xamarin.Forms;
 
 namespace CartolaMais.Views
 {
-    public partial class Login : ContentPage
+    public partial class Ligas : ContentPage
     {
-        public Login()
+        public Ligas()
         {
             InitializeComponent();
-        }
-
-        public void OnEntrar(object sender, EventArgs e)
-        {
-            var pagina = new Views.MenuPage();
-            Navigation.PushAsync(pagina);
         }
     }
 }
