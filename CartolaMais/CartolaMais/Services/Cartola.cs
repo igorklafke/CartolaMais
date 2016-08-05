@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,7 +29,12 @@ namespace CartolaMais.Services
 
 				var response = await httpClient.SendAsync(request);
 				response.EnsureSuccessStatusCode();
-				return await response.Content.ReadAsStringAsync();
+
+                string result = await response.Content.ReadAsStringAsync();
+
+                JObject root = JObject.Parse(result);
+
+                return (string)root["glbId"];
 			}
 		}
 	}
